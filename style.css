@@ -1,0 +1,298 @@
+*{
+    list-style: none;/* 목록 점 없애기 */
+    text-decoration: none;/* 텍스트색깔,밑줄 없애기 */
+    border-collapse: collapse;/* 테이블 선 붙이기 */
+    color: #4a3f32;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Brave lion main page */
+.navbar_logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    font-size: 18px;
+    background-color: whitesmoke;
+} 
+.navbar_menu>ol{
+    display: flex;
+}
+.navbar_menu>ol>li{
+    padding: 0px 17px 0px 17px 
+    
+}
+.navbar_menu>ol>li>a:hover{
+    color: #B85C38;
+    font-weight: bold;
+}
+.navbar_icon{
+    display: inline-block;
+}
+.navbar_icon>a>img{
+    margin: 5px 5px 0px 0px;
+}
+.main_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faeee0;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+.main_page_text{
+    margin-left: 58px;
+}
+.main_page_text>p{
+    text-align: center;
+}
+.main_page_text p:nth-child(-n+3){
+    font-size: 36px;
+}
+.main_page_text p:nth-child(4){
+    font-size: 48px;
+    font-weight: bold;
+}
+.main_page_text p:nth-child(5){
+    font-size: 36px;
+}
+.main_page_text>p>span{
+    font-weight: bold;
+    font-size: 40px;
+}
+@media screen and (max-width: 900px){
+    .navbar{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_logo{
+        margin: 24px 0px 0px 30px;     
+    }
+    .navbar_menu>ol{
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px 0px 20px;     
+      
+    }
+}
+
+.introduce{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: block;
+}
+
+.introduce_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.introduce_text>p{
+    display: flex;
+    font-size: 27.8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduce_text>p>img{
+    margin: 0 40px;
+}
+
+.introduce_text>p:nth-child(2n+1){
+    background-color: #dbd0c0;
+    height: 25vh;
+    width: 100%;
+}
+.introduce_text>p:nth-child(2n){
+    background-color: #faeee0;
+    height: 25vh;
+    width: 100%;
+}
+
+
+.reason{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #dbd0c0;
+}
+
+.reason>iframe{
+    width: 60%;
+    height: 100%;
+    margin-top: 13px;
+}
+
+.reason>p{
+    font-size: 28px;
+}
+
+.reason>p>a:hover{
+    background-color: #F9ED69;
+}
+
+.reason>p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reason>p>img{
+    margin-right: 553px;
+}
+
+
+.service{
+    background-color: #faeee0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 280px);
+    grid-gap: 30px;
+    justify-content: center;/*justify-items가 안되는 이유는?*/
+    align-content: center;
+
+    
+}
+.service>p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #dbd0c0;
+    border-radius: 30px;
+    width: 300px;
+    height: 278px;
+}
+.service>p>img{
+    margin-bottom: 12px;
+}
+
+.ambition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #dbd0c0;
+}
+
+.ambition>iframe{
+    width: 60%;
+    height: 100%;
+    margin-top: 13px;
+ 
+}
+
+.ambition>p{
+    font-size: 28px;
+}
+
+.ambition>p>a:hover{
+    background-color: #F9ED69;
+}
+
+.ambition>p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4a3f32;
+    width: 100%;
+    height: 140px;
+}
+.footer>p{
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+.footer>p>a{
+    color: whitesmoke;
+}
+
+
+/* reason page */
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    color: #4a3f32;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;font-family: 'Noto Sans KR', sans-serif;
+}
+.reason_page{
+    background-color: #dbd0c0;
+    height: 140vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ambition page */
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    color: #4a3f32;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;font-family: 'Noto Sans KR', sans-serif;
+}
+.ambition_page{
+    background-color: #dbd0c0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sources page */
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    color: #4a3f32;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sources_page{
+    background-color: #dbd0c0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
